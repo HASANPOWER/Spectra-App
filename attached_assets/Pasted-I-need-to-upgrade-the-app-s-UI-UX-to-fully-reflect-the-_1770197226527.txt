@@ -1,0 +1,27 @@
+I need to upgrade the app's UI/UX to fully reflect the "Cyberpunk/Privacy" theme and ensure a professional finish. Please implement these 5 specific improvements:
+
+1. **Burn Timer Feature (Self-Destruct Messages):**
+   - In the `ChatRoom` screen, inside the input bar (next to the text field), add a "Timer" or "Flame" icon (use Lucide icon).
+   - When clicked, open a small modal or action sheet to select message duration: "Off", "10 Seconds", "1 Hour", "24 Hours".
+   - Display a small indicator (e.g., a tiny flame icon with the time) inside the message bubble if a timer is active.
+
+2. **Trust Indicators (Security Headers):**
+   - In the `ChatRoom` header, next to the contact's name, add a small "Lock" icon 🔒.
+   - This icon should be visible in all personas to reinforce the "End-to-End Encrypted" feeling.
+
+3. **Modern Avatar System:**
+   - Replace the current simple "Initials" (text-based) avatars in chat lists and headers.
+   - Use `Lucide-React-Native` icons instead to represent users based on the Persona context:
+     - **Family Persona:** Use a 'User' or 'Heart' icon with a warm background circle.
+     - **Work Persona:** Use a 'Briefcase' or 'Building' icon with a blue background circle.
+     - **Ghost Persona:** Use a 'Ghost' or 'Bot' icon with a neon green/black background.
+
+4. **Expanded Security Settings:**
+   - Update the `Settings` screen to include a new "Security" section.
+   - Add dummy toggles/buttons for: "Change PIN Code", "Enable Biometrics" (Toggle switch), and a "Panic Button" (A distinct red button at the bottom labeled "Delete All Data").
+
+5. **Transparent Logo Integration:**
+   - Ensure that the app logo container in the headers (where it says "سبكترا") has a completely transparent background (`backgroundColor: 'transparent'`).
+   - The logo text and icon should blend seamlessly into the header background color of the currently active persona, without being inside a solid black box.
+
+Please update the code for the Chat Screen, Header Components, Settings Screen, and global styles to integrate these features smoothly.
